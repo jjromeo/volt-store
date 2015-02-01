@@ -1,3 +1,2 @@
-# Start your docs here.
+# Volt Store
 
-# See Volt docs at https://github.com/voltrb/volt/blob/master/Readme.md
