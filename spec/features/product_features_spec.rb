@@ -13,5 +13,15 @@ if ENV['BROWSER']
       click_link 'Products'
       expect(page).to have_content 'Products currently available'
     end
+
+    it 'let\'s you add a product' do
+      visit '/'
+      click_link 'Manage Products'
+      fill_in 'product_name', with: 'Lovely shoes'
+      click_link 'add product'
+      visit '/'
+      click_link 'Products'
+      expect(page).to have_content 'Lovely shoes'
+    end
   end
 end
