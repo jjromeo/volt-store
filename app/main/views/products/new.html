@@ -5,7 +5,9 @@
   <form e-submit="add_product">
     <div class="form-group">
       <label>Product Name</label>
-      <input class="form-control" name="name" type="text" value="{{page._new_product}}">
+      <input class="form-control" name="name" type="text" value="{{page._new_product._name}}">
+      <label>Sale Price</label>
+      <input class="form-control" name="price" type="text" value="{{page._new_product._price}}">
     </div>
     <button>Add product</button>
   </form>

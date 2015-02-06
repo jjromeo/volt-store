@@ -11,7 +11,7 @@ class ProductsController < Volt::ModelController
   end
 
   def add_product
-    _products << {name: page._new_product}
+    _products << {name: page._new_product._name, price: page._new_product._price}
   end
 
   private

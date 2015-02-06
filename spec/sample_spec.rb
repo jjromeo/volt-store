@@ -1,7 +1,7 @@
 if ENV['BROWSER']
   require 'spec_helper'
 
-  describe 'sample integration test', type: :feature do
+  describe 'Loading page', type: :feature do
     it 'should load the page' do
       visit '/'
 
