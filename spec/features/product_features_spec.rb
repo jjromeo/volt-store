@@ -17,8 +17,9 @@ if ENV['BROWSER']
     it 'let\'s you add a product' do
       visit '/'
       click_link 'Manage Products'
-      fill_in 'product_name', with: 'Lovely shoes'
-      click_link 'add product'
+      click_link 'Add a new product'
+      fill_in 'name', with: 'Lovely shoes'
+      click_button 'Add product'
       visit '/'
       click_link 'Products'
       expect(page).to have_content 'Lovely shoes'
