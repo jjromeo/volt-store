@@ -5,6 +5,7 @@ class ProductsController < Volt::ModelController
   end
 
   def manage
+    @product_added = false
   end
 
   def new
@@ -12,6 +13,7 @@ class ProductsController < Volt::ModelController
 
   def add_product
     _products << {name: page._new_product._name, price: page._new_product._price}
+    page._product_added = true
   end
 
   private
